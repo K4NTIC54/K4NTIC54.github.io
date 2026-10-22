@@ -1,0 +1,105 @@
+{
+  "headline": "SALON SHARP",
+  "dictionary": "https://msx.benzac.de/info/xp/dictionary/fr.json",
+  "menu": [
+    {
+      "icon": "live-tv",
+      "label": "Directs TV",
+      "data": {
+        "headline": "Flux Directs (HLS)",
+        "template": {
+          "type": "separate",
+          "layout": "0,0,4,3",
+          "color": "#19191f",
+          "icon": "live-tv"
+        },
+        "items": [
+          {
+            "title": "ARTE · Direct FR",
+            "titleFooter": "Flux officiel HLS",
+            "playerLabel": "ARTE — Français",
+            "action": "video:https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8"
+          },
+          {
+            "title": "France 24 · Direct FR",
+            "titleFooter": "Information en continu",
+            "playerLabel": "France 24",
+            "action": "video:https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8"
+          },
+          {
+            "title": "TV5 Monde Info",
+            "titleFooter": "Direct Francophone",
+            "playerLabel": "TV5 Monde",
+            "action": "video:https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8"
+          },
+          {
+            "title": "Euronews · Français",
+            "titleFooter": "Information européenne",
+            "icon": "fiber-manual-record",
+            "playerLabel": "Euronews FR",
+            "action": "video:https://rakuten-euronews-2-fr.samsung.wurl.tv/playlist.m3u8"
+          }
+        ]
+      }
+    },
+    {
+      "icon": "play-circle-outline",
+      "label": "YouTube & Portails",
+      "data": {
+        "headline": "Sélection & Portails MSX",
+        "template": {
+          "type": "separate",
+          "layout": "0,0,4,3",
+          "color": "#19191f",
+          "icon": "play-arrow"
+        },
+        "items": [
+          {
+            "title": "ARTE Documentaire (YouTube Plugin)",
+            "titleFooter": "Exemple de vidéo via plugin MSX",
+            "playerLabel": "YouTube MSX",
+            "action": "video:plugin:https://msx.benzac.de/plugins/youtube.html?id=PRy2CFVlPOA"
+          },
+          {
+            "title": "Portail Démo Officiel MSX",
+            "titleFooter": "Exemples & plugins de Benzac",
+            "icon": "explore",
+            "action": "menu:https://msx.benzac.de/msx/menu.json"
+          },
+          {
+            "title": "Lancer un Portail Externe (v4)",
+            "titleFooter": "Ouvre le portail tiers",
+            "icon": "apps",
+            "action": "request:interaction:http://v4.msxplayer.ru/msx/start.json"
+          }
+        ]
+      }
+    },
+    {
+      "icon": "settings",
+      "label": "Réglages & Reset",
+      "data": {
+        "headline": "Maintenance du Portail",
+        "template": {
+          "type": "separate",
+          "layout": "0,0,4,3",
+          "color": "#19191f"
+        },
+        "items": [
+          {
+            "title": "Recharger le portail",
+            "titleFooter": "Applique tes modifications GitHub",
+            "icon": "refresh",
+            "action": "reload"
+          },
+          {
+            "title": "Paramètres MediaStation X",
+            "titleFooter": "Gérer ou effacer le Start Parameter",
+            "icon": "build",
+            "action": "settings"
+          }
+        ]
+      }
+    }
+  ]
+}
